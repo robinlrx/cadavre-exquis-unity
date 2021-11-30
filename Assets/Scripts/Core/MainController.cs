@@ -8,6 +8,7 @@ public class MainController : MonoBehaviour
     void Start()
     {
         SceneController.Instance.OpenScene("TV");
+        SceneController.Instance.OpenScene("Intro");
         SceneController.Instance.OpenScene("One");
     }
 
