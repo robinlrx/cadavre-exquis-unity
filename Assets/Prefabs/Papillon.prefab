@@ -131,11 +131,39 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7357497148001132728, guid: 85f231beb54c8904eb5bbe66d140558f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3015b86db61ce949a5023bc4778adc0, type: 2}
+    - target: {fileID: -1337762213580631955, guid: 85f231beb54c8904eb5bbe66d140558f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3015b86db61ce949a5023bc4778adc0, type: 2}
+    - target: {fileID: 508612976501458771, guid: 85f231beb54c8904eb5bbe66d140558f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3015b86db61ce949a5023bc4778adc0, type: 2}
     - target: {fileID: 919132149155446097, guid: 85f231beb54c8904eb5bbe66d140558f, type: 3}
       propertyPath: m_Name
       value: papillon-new
       objectReference: {fileID: 0}
     - target: {fileID: 3407223314981601719, guid: 85f231beb54c8904eb5bbe66d140558f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3015b86db61ce949a5023bc4778adc0, type: 2}
+    - target: {fileID: 6317578925029434746, guid: 85f231beb54c8904eb5bbe66d140558f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3015b86db61ce949a5023bc4778adc0, type: 2}
+    - target: {fileID: 8531221260400662908, guid: 85f231beb54c8904eb5bbe66d140558f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3015b86db61ce949a5023bc4778adc0, type: 2}
+    - target: {fileID: 8928686348417289446, guid: 85f231beb54c8904eb5bbe66d140558f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3015b86db61ce949a5023bc4778adc0, type: 2}
+    - target: {fileID: 8991331024749506359, guid: 85f231beb54c8904eb5bbe66d140558f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f3015b86db61ce949a5023bc4778adc0, type: 2}
@@ -161,7 +189,7 @@ Animator:
   m_GameObject: {fileID: 2441405750727776035}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ca26a59402f01cf41ba140d169be2eba, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f74eee55431878499f591f298cf2d05, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

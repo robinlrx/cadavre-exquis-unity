@@ -354,9 +354,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Papillon
       objectReference: {fileID: 0}
-    - target: {fileID: 6937780635816792094, guid: 41e1782004c56b64085af88bdfe0a12b, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 8f74eee55431878499f591f298cf2d05, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41e1782004c56b64085af88bdfe0a12b, type: 3}
