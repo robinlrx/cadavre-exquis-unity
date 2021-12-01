@@ -7,9 +7,9 @@ public class MainController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SceneController.Instance.OpenScene("TV");
-        SceneController.Instance.OpenScene("Intro");
         SceneController.Instance.OpenScene("Accueil");
+        SceneController.Instance.OpenScene("Intro");
+        SceneController.Instance.OpenScene("TV");
         SceneController.Instance.OpenScene("One");
     }
 
