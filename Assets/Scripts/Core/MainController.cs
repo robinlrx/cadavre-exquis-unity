@@ -9,6 +9,7 @@ public class MainController : MonoBehaviour
     {
         SceneController.Instance.OpenScene("TV");
         SceneController.Instance.OpenScene("Intro");
+        SceneController.Instance.OpenScene("Accueil");
         SceneController.Instance.OpenScene("One");
     }
 
