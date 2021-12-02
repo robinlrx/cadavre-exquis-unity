@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class IntroController : MonoBehaviour
 {
-    private IntroAnimation animation;
+    private TranslationAnimation animation;
 
     // Start is called before the first frame update
     void Start()
     {
         GameObject Papillon = GameObject.Find("Papillon");
-        animation = Papillon.GetComponent<IntroAnimation>();
+        animation = Papillon.GetComponent<TranslationAnimation>();
         SceneController.Instance.OnCloseScene += PlayAnimation;
     }
 
