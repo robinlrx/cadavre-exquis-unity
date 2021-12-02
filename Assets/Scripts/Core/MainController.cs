@@ -10,15 +10,15 @@ public class MainController : MonoBehaviour
         SceneController.Instance.OpenScene("Accueil");
         SceneController.Instance.OpenScene("Intro");
         SceneController.Instance.OpenScene("TV");
-        SceneController.Instance.OpenScene("One");
+        // SceneController.Instance.OpenScene("One");
     }
 
     // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space)){
-            SceneController.Instance.OpenScene("Two");
-            SceneController.Instance.CloseScene("One");
+            SceneController.Instance.OpenScene("One");
+            SceneController.Instance.CloseScene("Intro");
         }
     }
 }
