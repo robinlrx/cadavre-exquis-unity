@@ -34,6 +34,6 @@ public class CameraFollow : MonoBehaviour
     public void StopFollow () {
         CameraTransform.parent = null;
         // Revient à la position inititial de la camera soit z = 58
-        CameraTransform.position = InitPosition;
+        // CameraTransform.position = InitPosition;
     }
 }
