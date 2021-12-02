@@ -31,6 +31,7 @@ public class TranslationAnimation : MonoBehaviour
 
     public void StartAnimation(){
         _isStarted = true;
+        gameObject.GetComponent<CameraFollow>().StartFollow();
         Debug.Log("start anim " + Time.time);
         StartCoroutine(Animate());
 
@@ -53,6 +54,7 @@ public class TranslationAnimation : MonoBehaviour
         }
 
         transform.position = EndPoint.transform.position;
+        gameObject.GetComponent<CameraFollow>().StopFollow();
         Debug.Log("end anim " + Time.time);
     }
 

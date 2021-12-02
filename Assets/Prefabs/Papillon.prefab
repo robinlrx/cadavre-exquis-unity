@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 159821590734356222}
   - component: {fileID: -2586917676480461148}
   - component: {fileID: 1337557934069199047}
-  - component: {fileID: 203733464}
   - component: {fileID: 4204264757665510899}
+  - component: {fileID: 5909928501310887107}
   m_Layer: 0
   m_Name: Papillon
   m_TagString: Untagged
@@ -66,21 +66,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &203733464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2933014431006928116}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1668d30da2f146944994ac608ea008af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterPoint: {fileID: 0}
-  Speed: 0
-  Randomness: 10
 --- !u!114 &4204264757665510899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,6 +84,19 @@ MonoBehaviour:
   Randomness: 1
   Frequency: 1
   Seed: 50
+--- !u!114 &5909928501310887107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2933014431006928116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604d99c3c0ad1fa4a8b33803c54df9ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Distance: -15
 --- !u!1001 &3251867528430135922
 PrefabInstance:
   m_ObjectHideFlags: 0

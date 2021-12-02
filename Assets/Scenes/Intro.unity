@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -156,11 +156,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2974450161811933217, guid: babcba14dfe6ab04185bf125e4e7e85e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.00000001820747
+      value: -0.000000016625252
       objectReference: {fileID: 0}
     - target: {fileID: 2974450161811933217, guid: babcba14dfe6ab04185bf125e4e7e85e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0000000015477489
+      value: -0.0000000014132508
       objectReference: {fileID: 0}
     - target: {fileID: 2974450161811933217, guid: babcba14dfe6ab04185bf125e4e7e85e, type: 3}
       propertyPath: m_LocalRotation.y
@@ -168,7 +168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2974450161811933217, guid: babcba14dfe6ab04185bf125e4e7e85e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.08470078
+      value: -0.0847008
       objectReference: {fileID: 0}
     - target: {fileID: 2974450161811933217, guid: babcba14dfe6ab04185bf125e4e7e85e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -180,6 +180,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2974450161811933217, guid: babcba14dfe6ab04185bf125e4e7e85e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974450161811933219, guid: babcba14dfe6ab04185bf125e4e7e85e, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2974450161811933220, guid: babcba14dfe6ab04185bf125e4e7e85e, type: 3}
@@ -294,7 +298,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &258268451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,7 +341,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258268450}
-  m_LocalRotation: {x: 0.0000000015477489, y: 0.99640644, z: -0.08470078, w: 0.00000001820747}
+  m_LocalRotation: {x: -0.0000000014132508, y: 0.99640644, z: -0.0847008, w: -0.000000016625252}
   m_LocalPosition: {x: 0, y: 1.37, z: 58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
