@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -232,6 +232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a959de02013ef034aa3c09037428ad8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TvSound: {fileID: 1597638118}
+  Ui: {fileID: 896081037}
 --- !u!1001 &470962284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -612,6 +614,7 @@ GameObject:
   - component: {fileID: 896081035}
   - component: {fileID: 896081034}
   - component: {fileID: 896081033}
+  - component: {fileID: 896081037}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -702,6 +705,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!225 &896081037
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896081032}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1119062324
 GameObject:
   m_ObjectHideFlags: 0

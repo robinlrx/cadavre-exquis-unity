@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -266,6 +266,14 @@ PrefabInstance:
     - target: {fileID: 2933014431006928116, guid: 41e1782004c56b64085af88bdfe0a12b, type: 3}
       propertyPath: m_Name
       value: Papillon
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204264757665510899, guid: 41e1782004c56b64085af88bdfe0a12b, type: 3}
+      propertyPath: Seed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204264757665510899, guid: 41e1782004c56b64085af88bdfe0a12b, type: 3}
+      propertyPath: Duration
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4204264757665510899, guid: 41e1782004c56b64085af88bdfe0a12b, type: 3}
       propertyPath: EndPoint

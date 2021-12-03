@@ -16,6 +16,8 @@ public class TranslationAnimation : MonoBehaviour
     public int Seed = 40;
 
     private bool _isStarted = false;
+
+    private bool _isPlay = false;
     
     void Start()
     {
@@ -24,7 +26,7 @@ public class TranslationAnimation : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if(Input.GetKeyDown(KeyCode.Space) && !_isPlay){
             StartAnimation();
         }
     }
@@ -55,6 +57,7 @@ public class TranslationAnimation : MonoBehaviour
 
         transform.position = EndPoint.transform.position;
         gameObject.GetComponent<CameraFollow>().StopFollow();
+        _isPlay = true;
         Debug.Log("end anim " + Time.time);
     }
 
