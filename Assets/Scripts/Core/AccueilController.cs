@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class AccueilController : MonoBehaviour
 {
     public AudioSource TvSound;
     public CanvasGroup Ui;
+
+    
     public void StartGame ()
     {
         StartCoroutine(Fade());
@@ -24,5 +27,6 @@ public class AccueilController : MonoBehaviour
             yield return null;
         }
         SceneController.Instance.CloseScene("Accueil");
+        GameObject.Find("Video Player Docu").GetComponent<VideoPlayer>().Play();
     }
 }
