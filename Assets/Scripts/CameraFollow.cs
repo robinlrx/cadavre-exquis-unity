@@ -41,11 +41,9 @@ public class CameraFollow : MonoBehaviour
         CameraTransform.DOLookAt(GameObject.Find("tv").transform.position, 1);
         CameraTransform.DOMoveZ(10, 2);
         CameraTransform.DOMoveY(5, 2);
-        // .onComplete(()=>{
-        //     CameraTransform.LookAt(GameObject.Find("tv").transform.position);
-        // });
+        GetComponent<PapillonAnimation>().isRotatingAroundTV=true;
+        
         // Revient à la position inititial de la camera soit z = 58
         // CameraTransform.position = InitPosition;
-        // CameraTransform.DOMoveZ(100, 1);
     }
 }
