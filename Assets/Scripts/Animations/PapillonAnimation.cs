@@ -28,7 +28,6 @@ public class PapillonAnimation : MonoBehaviour
         
     }
 
-
  public void SetRotate(){
      Debug.Log("SetRotate");
      StartCoroutine(PreTransition());
@@ -77,18 +76,23 @@ public class PapillonAnimation : MonoBehaviour
         float progress = 0;
         float duration = 3f;
         Vector3 InitPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        Vector3 DestPosition = new Vector3(Center.position.x + Mathf.Sin(0)*Radius, _Altitude, Center.position.z + Mathf.Cos(0)*Radius);
+        Debug.Log(InitPosition);
 
-        while (time<= duration) {
+        while (time <= duration) {
             progress = time/duration;
-            transform.position = Vector3.Lerp(InitPosition,  new Vector3(Center.position.x + Mathf.Sin(0)*Radius, _Altitude, Center.position.z + Mathf.Cos(0)*Radius), progress);
+            time += Time.deltaTime;
+            transform.position = Vector3.Lerp(InitPosition, DestPosition, progress);
             Debug.Log("PreTransition");
+            Debug.Log(Radius + " " +  DestPosition + " " + InitPosition);
             yield return null;
         }
 
-        transform.position = new Vector3(Center.position.x + Mathf.Sin(0)*Radius, _Altitude, Center.position.z + Mathf.Cos(0)*Radius);
-        isRotatingAroundTV = true;
+        transform.position = DestPosition;
+        // isRotatingAroundTV = true;
         _timeRotate = 0;
         Debug.Log("Fin PreTransition");
+        Debug.Log(Radius + " " +  DestPosition + " " + InitPosition);
     }
 
 }

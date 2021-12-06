@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class MainController : MonoBehaviour
 {
+    private Transform CameraTransform;
     public enum State
     {
         SceneOne,
@@ -32,7 +34,9 @@ public class MainController : MonoBehaviour
     public void ChangeScene (State state) {
         switch (state)
         {
-            case State.SceneOne: 
+            case State.SceneOne:
+            CameraTransform.DOMoveZ(5, 2);
+            CameraTransform.DOMoveY(3, 2); 
             SceneController.Instance.CloseScene("Intro");
             SceneController.Instance.OpenScene("One");
             SceneController.Instance.CloseScene("TV");

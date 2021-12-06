@@ -128,7 +128,7 @@ MonoBehaviour:
   isRotatingAroundTV: 1
   isTranslating: 0
   _Altitude: 3
-  Duration: 3
+  Duration: 36
   Speed: 1
   Center: {fileID: 0}
   Radius: 3.5
