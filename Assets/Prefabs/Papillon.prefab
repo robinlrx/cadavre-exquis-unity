@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1337557934069199047}
   - component: {fileID: 4204264757665510899}
   - component: {fileID: 5909928501310887107}
+  - component: {fileID: 7924340759066272887}
+  - component: {fileID: 5941360630602078454}
   m_Layer: 0
   m_Name: Papillon
   m_TagString: Untagged
@@ -97,6 +99,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Distance: -15
+--- !u!136 &7924340759066272887
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2933014431006928116}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.47
+  m_Height: 3.38
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.0004183501, z: -1.57}
+--- !u!114 &5941360630602078454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2933014431006928116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce25fc55fce0b14daadb50d069fd509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRotatingAroundTV: 1
+  isTranslating: 0
+  _Altitude: 3
+  Duration: 3
+  Speed: 1
+  Center: {fileID: 0}
+  Radius: 3.5
+  TranslationDuration: 2
 --- !u!1001 &3251867528430135922
 PrefabInstance:
   m_ObjectHideFlags: 0

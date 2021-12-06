@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class MainController : MonoBehaviour
 {
+    public enum State
+    {
+        SceneOne,
+        SceneTwo,
+        SceneThree
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +26,17 @@ public class MainController : MonoBehaviour
             SceneController.Instance.OpenScene("One");
             SceneController.Instance.CloseScene("Intro");
 			SceneController.Instance.CloseScene("TV");
+        }
+    }
+
+    public void ChangeScene (State state) {
+        switch (state)
+        {
+            case State.SceneOne: 
+            SceneController.Instance.CloseScene("Intro");
+            SceneController.Instance.OpenScene("One");
+            SceneController.Instance.CloseScene("TV");
+            break;
         }
     }
 }
