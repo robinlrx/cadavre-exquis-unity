@@ -19,6 +19,7 @@ public class MainController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space)){
             SceneController.Instance.OpenScene("One");
             SceneController.Instance.CloseScene("Intro");
+			SceneController.Instance.CloseScene("TV");
         }
     }
 }
