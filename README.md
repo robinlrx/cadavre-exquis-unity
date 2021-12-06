@@ -1,4 +1,4 @@
-# cadavre-exquis-unity
+# L'effet papillon
 
 ## Présentation
 
@@ -9,3 +9,10 @@ Un papillon se retrouve coincé à l’intérieur d’une télévision cathodiqu
 
 - Développeurs : Guénolé Moreau, Robin Leroux
 - Designers : Julie Pereira, Ophélie Ostremeyer
+
+
+## Technologies
+
+- Unity
+- Blender
+- Cinema4D
