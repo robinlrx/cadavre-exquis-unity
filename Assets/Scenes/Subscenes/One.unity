@@ -297,6 +297,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1337557934069199047, guid: 41e1782004c56b64085af88bdfe0a12b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2933014431006928116, guid: 41e1782004c56b64085af88bdfe0a12b, type: 3}
       propertyPath: m_Name
       value: Papillon
@@ -685,15 +689,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2257294906998263232, guid: b4e320dbf1b40854cb56c9758cbb9ddf, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2257294906998263232, guid: b4e320dbf1b40854cb56c9758cbb9ddf, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2257294906998263232, guid: b4e320dbf1b40854cb56c9758cbb9ddf, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2257294906998263232, guid: b4e320dbf1b40854cb56c9758cbb9ddf, type: 3}
       propertyPath: m_LocalPosition.x
