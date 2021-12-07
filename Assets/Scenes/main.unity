@@ -251,8 +251,8 @@ MonoBehaviour:
   _mapBundle: {fileID: 0}
   _workInEditor: 0
   _localHostMode: 1
-  _localHost: 172.20.10.3
-  _localPort: 7000
+  _localHost: 192.168.159.250
+  _localPort: 8000
 --- !u!114 &858123846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,11 +271,11 @@ MonoBehaviour:
   _workInEditor: 0
   _localHostMode: 0
   _localPortMode: 2
-  _localReceiver: {fileID: 0}
+  _localReceiver: {fileID: 858123845}
   _localHost: 172.23.16.1
   _localPort: 7000
-  _remoteHost: 172.20.10.2
-  _remotePort: 8000
+  _remoteHost: 10.77.202.101
+  _remotePort: 7000
   _useBundle: 0
 --- !u!4 &858123847
 Transform:
