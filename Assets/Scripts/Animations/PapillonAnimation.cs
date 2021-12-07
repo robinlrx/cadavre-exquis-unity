@@ -89,7 +89,7 @@ public class PapillonAnimation : MonoBehaviour
         }
 
         transform.position = DestPosition;
-        // isRotatingAroundTV = true;
+        isRotatingAroundTV = true;
         _timeRotate = 0;
         Debug.Log("Fin PreTransition");
         Debug.Log(Radius + " " +  DestPosition + " " + InitPosition);
