@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PapillonAnimation : MonoBehaviour
 {
-    public bool isRotatingAroundTV = false;
-    public bool isTranslating = false;
+    private bool isRotatingAroundTV = false;
+    private bool isTranslating = false;
 	private GameObject Tv;
 
 	public int _Altitude;
@@ -58,7 +58,6 @@ public class PapillonAnimation : MonoBehaviour
     }
 
     private void RotateAroundTV(){
-        Debug.Log(_angle);
 		_angle += Speed*Time.deltaTime;
         transform.position = GetCirclePoint(_angle);
     }
@@ -82,20 +81,16 @@ public class PapillonAnimation : MonoBehaviour
             progress = time/duration;
             time += Time.deltaTime;
             transform.position = Vector3.Lerp(InitPosition, DestPosition, progress);
-            Debug.Log(transform.position);
-            Debug.Log(Radius + " " +  DestPosition + " " + InitPosition);
             yield return null;
         }
 
         transform.localPosition  = DestPosition;
         isRotatingAroundTV = true;
         _timeRotate = 0;
-        Debug.Log("Fin PreTransition");
-        Debug.Log(Radius + " " +  DestPosition + " " + InitPosition);
     }
 
     private Vector3 GetCirclePoint(float angle){
-        return new Vector3(Center.position.x + Mathf.Cos(angle)*Radius, _Altitude, Center.position.z + Mathf.Sin(angle)*Radius);
+        return new Vector3(Center.position.x + Mathf.Cos(angle)*Radius, _Altitude, Center.position.z - Mathf.Sin(angle)*Radius);
     }
 
 }

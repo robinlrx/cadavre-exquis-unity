@@ -18,7 +18,7 @@ public class AccueilController : MonoBehaviour
     private IEnumerator Fade() {
         float time = 0f;
         float progress = 0f;
-        float Duration = 1.5f;
+        float Duration = 2f;
         while(time <= Duration){
             time += Time.deltaTime;
             progress = time/Duration;

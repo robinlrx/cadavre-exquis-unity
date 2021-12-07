@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : Singleton<SceneController>
 {
-
     public delegate void SceneControllerEvent(string scene);
     public event SceneControllerEvent OnOpenScene;
     public event SceneControllerEvent OnCloseScene;

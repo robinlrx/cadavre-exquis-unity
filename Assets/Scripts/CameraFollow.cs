@@ -31,7 +31,7 @@ public class CameraFollow : MonoBehaviour
         CameraTransform.localPosition = Vector3.zero;
         Vector3 Position = CameraTransform.localPosition;
         Position.z = Distance;
-        Position.y = 5f;
+        Position.y = .8f;
         CameraTransform.localPosition = Position;
     }
 
@@ -42,9 +42,6 @@ public class CameraFollow : MonoBehaviour
         CameraTransform.DOMoveZ(10, 2);
         CameraTransform.DOMoveY(5, 2);
         GetComponent<PapillonAnimation>().SetRotate();
-        
-        // Revient à la position inititial de la camera soit z = 58
-        // CameraTransform.position = InitPosition;
     }
 
 }
