@@ -54,14 +54,13 @@ public class PapillonAnimation : MonoBehaviour
         _startTranslateTime = Time.time;
 
         _initTranslatePosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-
+        Debug.Log("SetTranslate");
     }
 
     private void RotateAroundTV(){
-        // transform.RotateAround(Center.position,new Vector3(sin(), 0.1f, 0), 30 * Time.deltaTime);
-
+        Debug.Log(_angle);
 		_angle += Speed*Time.deltaTime;
-        transform.position = new Vector3(Center.position.x + Mathf.Sin(_angle)*Radius, _Altitude, Center.position.z + Mathf.Cos(_angle)*Radius);
+        transform.position = GetCirclePoint(_angle);
     }
 
     private void Translate()
@@ -76,23 +75,27 @@ public class PapillonAnimation : MonoBehaviour
         float progress = 0;
         float duration = 3f;
         Vector3 InitPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-        Vector3 DestPosition = new Vector3(Center.position.x + Mathf.Sin(0)*Radius, _Altitude, Center.position.z + Mathf.Cos(0)*Radius);
+        Vector3 DestPosition = GetCirclePoint(0);
         Debug.Log(InitPosition);
 
         while (time <= duration) {
             progress = time/duration;
             time += Time.deltaTime;
             transform.position = Vector3.Lerp(InitPosition, DestPosition, progress);
-            Debug.Log("PreTransition");
+            Debug.Log(transform.position);
             Debug.Log(Radius + " " +  DestPosition + " " + InitPosition);
             yield return null;
         }
 
-        transform.position = DestPosition;
+        transform.localPosition  = DestPosition;
         isRotatingAroundTV = true;
         _timeRotate = 0;
         Debug.Log("Fin PreTransition");
         Debug.Log(Radius + " " +  DestPosition + " " + InitPosition);
+    }
+
+    private Vector3 GetCirclePoint(float angle){
+        return new Vector3(Center.position.x + Mathf.Cos(angle)*Radius, _Altitude, Center.position.z + Mathf.Sin(angle)*Radius);
     }
 
 }

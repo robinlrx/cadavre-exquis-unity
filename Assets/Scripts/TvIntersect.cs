@@ -6,19 +6,9 @@ using UnityEngine;
 public class TvIntersect : MonoBehaviour
 {
     public float delay;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void OnTriggerEnter (Collider other) {
+        Debug.Log("On trigger enter : " + other.name);
         if (other.name.CompareTo("Papillon") == 0 ) {
             StartCoroutine(ChangeScene());
         }

@@ -177,6 +177,26 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 513
       objectReference: {fileID: 0}
+    - target: {fileID: 2162507836751423409, guid: 92b9f7d7c168c4d4184c9e7f5749956a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.032634255
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162507836751423409, guid: 92b9f7d7c168c4d4184c9e7f5749956a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.026085008
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162507836751423409, guid: 92b9f7d7c168c4d4184c9e7f5749956a, type: 3}
+      propertyPath: m_Size.z
+      value: 0.02175617
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162507836751423409, guid: 92b9f7d7c168c4d4184c9e7f5749956a, type: 3}
+      propertyPath: m_Center.x
+      value: -0.0008355218
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162507836751423409, guid: 92b9f7d7c168c4d4184c9e7f5749956a, type: 3}
+      propertyPath: m_Center.y
+      value: -0.0004690278
+      objectReference: {fileID: 0}
     - target: {fileID: 6885345129114427028, guid: 92b9f7d7c168c4d4184c9e7f5749956a, type: 3}
       propertyPath: m_RootOrder
       value: 0
