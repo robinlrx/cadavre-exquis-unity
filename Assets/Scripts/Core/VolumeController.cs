@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class VolumeController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    AudioSource audioSource;
+
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.M)){
-            Debug.Log("mute");
-        }
+		// mute volume
+        if (Input.GetKeyDown(KeyCode.M)) {
+            audioSource.mute = !audioSource.mute;
+		}
     }
 }
