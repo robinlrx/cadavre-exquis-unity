@@ -29,7 +29,6 @@ public class PapillonAnimation : MonoBehaviour
     }
 
  public void SetRotate(){
-     Debug.Log("SetRotate");
      StartCoroutine(PreTransition());
  }
     // Update is called once per frame
@@ -54,7 +53,6 @@ public class PapillonAnimation : MonoBehaviour
         _startTranslateTime = Time.time;
 
         _initTranslatePosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-        Debug.Log("SetTranslate");
     }
 
     private void RotateAroundTV(){
