@@ -36,7 +36,6 @@ public class TranslationAnimation : MonoBehaviour
         gameObject.GetComponent<CameraFollow>().StartFollow();
         Debug.Log("start anim " + Time.time);
         StartCoroutine(Animate());
-
     }
 
     private IEnumerator Animate()

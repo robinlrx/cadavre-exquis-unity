@@ -15,8 +15,8 @@ public class CameraMouvement : MonoBehaviour
     private void OnOpenScene(string scene)
     {
         if (scene.CompareTo("One") == 0 ) {
-            transform.DOMoveZ(5, 2);
-            transform.DOMoveY(3, 2);
+            // transform.DOMoveZ(5, 2);
+            // transform.DOMoveY(3, 2);
         }
     }
 
