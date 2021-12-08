@@ -5,6 +5,7 @@ using UnityEngine;
 public class VolumeController : MonoBehaviour
 {
     AudioSource audioSource;
+	public AudioClip oiseauwav; // variable to define in Unity inspector
 
     void Start()
     {
@@ -15,7 +16,9 @@ public class VolumeController : MonoBehaviour
     {
 		// mute volume
         if (Input.GetKeyDown(KeyCode.M)) {
-            audioSource.mute = !audioSource.mute;
+            // change AudioClip;
+			audioSource.clip=oiseauwav;
+			audioSource.Play();
 		}
     }
 }

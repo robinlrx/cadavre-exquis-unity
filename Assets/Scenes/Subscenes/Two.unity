@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88352993e9219444bb5c32a36e88c08d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  oiseauwav: {fileID: 8300000, guid: 54c53e1b131073d40bdd4f43e32cea95, type: 3}
 --- !u!4 &588324919
 Transform:
   m_ObjectHideFlags: 0
