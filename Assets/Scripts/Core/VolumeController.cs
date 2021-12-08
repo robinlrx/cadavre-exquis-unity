@@ -26,28 +26,32 @@ public class VolumeController : MonoBehaviour
 
 	void Update() {
 
-		// add glass sound at scene One
-		if(scene == "One") {
+		// add glass sound at scene
+		if(scene == "One" || scene == "Two" || scene == "Three") {
 			audioSource.volume += Input.mouseScrollDelta.y * scale;
 
-			if (audioSource.volume == 1 && !isNewAudioSourceAdded) {
+			if (scene == "One" && audioSource.volume == 1 && !isNewAudioSourceAdded) {
 				AudioSource audioSourceGlass = gameObject.AddComponent<AudioSource>();
 				audioSourceGlass.clip = otherClip;
 				audioSourceGlass.Play();
 				isNewAudioSourceAdded = true;
 
-        		controller.ChangeScene(MainController.State.SceneTwo);
+				StartCoroutine(NextSceneTwo());
 			}
 		}
 
-		// mute volume at scene Two
-		if (scene == "Two") {
+		// mute volume at scene 
+		if (scene == "One" || scene == "Two" || scene == "Three") {
 			if (Input.GetKeyDown(KeyCode.M)) {
+				audioSource.mute = !audioSource.mute;
+
 				// change AudioClip;
+				if (scene == "Two") {
 				audioSource.clip = otherClip;
 				audioSource.Play();
 
-        		controller.ChangeScene(MainController.State.SceneThree);
+				StartCoroutine(NextSceneThree());
+				}
 			}
 		}
 
@@ -56,4 +60,16 @@ public class VolumeController : MonoBehaviour
 			audioSource.volume += Input.mouseScrollDelta.y * scale;
 		}
 	}
+
+    private IEnumerator NextSceneTwo()
+    {
+        yield return new WaitForSeconds(2f);
+        controller.ChangeScene(MainController.State.SceneTwo);
+    }
+
+	 private IEnumerator NextSceneThree()
+    {
+        yield return new WaitForSeconds(2f);
+        controller.ChangeScene(MainController.State.SceneThree);
+    }
 }
