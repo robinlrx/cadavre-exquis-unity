@@ -20,16 +20,16 @@ public class VolumeController : MonoBehaviour
 
 	void Update()
 	{
-		// add glass sound
-		// if (scene.name == "Three") { // replace by One
-		// 	audioSource.volume += Input.mouseScrollDelta.y * scale;
-		// 	if (audioSource.volume == 1 && !isNewAudioSourceAdded) {
-		// 		AudioSource audioSourceGlass = gameObject.AddComponent<AudioSource>();
-		// 		audioSourceGlass.clip = otherClip;
-		// 		audioSourceGlass.Play();
-		// 		isNewAudioSourceAdded = true;
-		// 	}
-		// }
+		// add glass sound at scene One
+		if (scene.name == "One") {
+			audioSource.volume += Input.mouseScrollDelta.y * scale;
+			if (audioSource.volume == 1 && !isNewAudioSourceAdded) {
+				AudioSource audioSourceGlass = gameObject.AddComponent<AudioSource>();
+				audioSourceGlass.clip = otherClip;
+				audioSourceGlass.Play();
+				isNewAudioSourceAdded = true;
+			}
+		}
 
 		// mute volume at scene Two
 		if (scene.name == "Two") {
