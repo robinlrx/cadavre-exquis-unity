@@ -35,8 +35,9 @@ public class MainController : MonoBehaviour
         {
             case State.SceneOne:
             SceneController.Instance.CloseScene("Intro");
-            SceneController.Instance.OpenScene("One");
             SceneController.Instance.CloseScene("TV");
+            SceneController.Instance.OpenScene("Noise");
+            SceneController.Instance.OpenScene("One", true);
             break;
         }
     }
