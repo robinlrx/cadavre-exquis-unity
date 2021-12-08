@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Altitude: 3
-  Duration: 31
+  Duration: 30
   Speed: 1
   Center: {fileID: 0}
   Radius: 3
