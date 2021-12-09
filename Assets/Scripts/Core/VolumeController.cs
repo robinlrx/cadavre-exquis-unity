@@ -26,7 +26,7 @@ public class VolumeController : MonoBehaviour
 
 	void Update() {
 
-		// add glass sound at scene
+		// control volume at scene
 		if(scene == "One" || scene == "Two" || scene == "Three") {
 			audioSource.volume += Input.mouseScrollDelta.y * scale;
 
