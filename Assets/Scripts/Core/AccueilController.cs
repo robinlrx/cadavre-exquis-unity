@@ -27,9 +27,12 @@ public class AccueilController : MonoBehaviour
             yield return null;
         }
         SceneController.Instance.CloseScene("Accueil");
+        
+        GameObject.Find("Tv On").GetComponent<AudioSource>().Play();
 
         GameObject.Find("Video Player Docu").GetComponent<VideoPlayer>().Play();
 
         GameObject.Find("Papillon").GetComponent<AudioSource>().Play();
+
     }
 }

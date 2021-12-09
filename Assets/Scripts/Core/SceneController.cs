@@ -10,8 +10,10 @@ public class SceneController : Singleton<SceneController>
     public event SceneControllerEvent OnOpenScene;
     public event SceneControllerEvent OnCloseScene;
 
-    public void OpenScene(string scene, bool preload = false, LoadSceneMode mode = LoadSceneMode.Additive){
+    private string ActualScene;
 
+    public void OpenScene(string scene, bool preload = false, LoadSceneMode mode = LoadSceneMode.Additive){
+        ActualScene = scene;
         if(preload) {
             StartCoroutine(OpenSceneAsync(scene, mode));
         } else {
@@ -36,5 +38,10 @@ public class SceneController : Singleton<SceneController>
     public void CloseScene(string scene) {
         SceneManager.UnloadSceneAsync(scene);
         OnCloseScene?.Invoke(scene);
+    }
+
+    public string GetActualScene() {
+        Debug.Log(ActualScene);
+        return ActualScene;
     }
 } 

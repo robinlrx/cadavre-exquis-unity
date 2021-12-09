@@ -1,49 +1,75 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class VolumeController : MonoBehaviour
 {
 	AudioSource audioSource;
 	public AudioClip otherClip; // variable to define in Unity inspector
-	private Scene scene;
 	private float scale;
 	private bool isNewAudioSourceAdded;
+	private string scene;
+
+	private GameObject mainController;
+
+	private MainController controller;
 
 	void Start()
 	{
+		mainController = GameObject.Find("MainController");
+		controller = mainController.GetComponent<MainController>();
 		audioSource = GetComponent<AudioSource>();
-		scene = SceneManager.GetActiveScene();
 		scale = 0.1f;
+		scene = SceneController.Instance.GetActualScene();
 	}
 
-	void Update()
-	{
-		// add glass sound at scene One
-		if (scene.name == "One") {
+	void Update() {
+
+		// add glass sound at scene
+		if(scene == "One" || scene == "Two" || scene == "Three") {
 			audioSource.volume += Input.mouseScrollDelta.y * scale;
-			if (audioSource.volume == 1 && !isNewAudioSourceAdded) {
+
+			if (scene == "One" && audioSource.volume == 1 && !isNewAudioSourceAdded) {
 				AudioSource audioSourceGlass = gameObject.AddComponent<AudioSource>();
 				audioSourceGlass.clip = otherClip;
 				audioSourceGlass.Play();
 				isNewAudioSourceAdded = true;
+
+				StartCoroutine(NextSceneTwo());
 			}
 		}
 
-		// mute volume at scene Two
-		if (scene.name == "Two") {
+		// mute volume at scene 
+		if (scene == "One" || scene == "Two" || scene == "Three") {
 			if (Input.GetKeyDown(KeyCode.M)) {
+				audioSource.mute = !audioSource.mute;
+
 				// change AudioClip;
+				if (scene == "Two") {
 				audioSource.clip = otherClip;
 				audioSource.Play();
+
+				StartCoroutine(NextSceneThree());
+				}
 			}
 		}
 
 		// change volume at scene Three
-		if (scene.name == "Three") {
+		if (scene == "Three") {
 			audioSource.volume += Input.mouseScrollDelta.y * scale;
 		}
-
 	}
+
+    private IEnumerator NextSceneTwo()
+    {
+        yield return new WaitForSeconds(2f);
+        controller.ChangeScene(MainController.State.SceneTwo);
+    }
+
+	 private IEnumerator NextSceneThree()
+    {
+        yield return new WaitForSeconds(2f);
+        controller.ChangeScene(MainController.State.SceneThree);
+    }
 }

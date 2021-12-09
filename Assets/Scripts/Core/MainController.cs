@@ -34,10 +34,22 @@ public class MainController : MonoBehaviour
         switch (state)
         {
             case State.SceneOne:
+            SceneController.Instance.OpenScene("Noise");
             SceneController.Instance.CloseScene("Intro");
             SceneController.Instance.CloseScene("TV");
-            SceneController.Instance.OpenScene("Noise");
             SceneController.Instance.OpenScene("One", true);
+            break;
+
+            case State.SceneTwo:
+            SceneController.Instance.OpenScene("Noise");
+            SceneController.Instance.CloseScene("One");
+            SceneController.Instance.OpenScene("Two", true);
+            break;
+
+            case State.SceneThree:
+            SceneController.Instance.OpenScene("Noise");
+            SceneController.Instance.CloseScene("Two");
+            SceneController.Instance.OpenScene("Three", true);
             break;
         }
     }
