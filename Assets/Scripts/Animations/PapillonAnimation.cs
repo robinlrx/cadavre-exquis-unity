@@ -65,6 +65,9 @@ public class PapillonAnimation : MonoBehaviour
         float progress = Time.time-_startTranslateTime/TranslationDuration;
         progress= Mathf.Max(0, Mathf.Min(progress, 1));
         transform.position = Vector3.Lerp(_initTranslatePosition, Center.position, progress);
+        if(progress == 1) {
+            isTranslating = false;
+        }
     }
 
     private IEnumerator PreTransition () {
