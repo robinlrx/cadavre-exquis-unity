@@ -38,6 +38,10 @@ public class VolumeController : MonoBehaviour
 
 				StartCoroutine(NextScene(MainController.State.SceneTwo));
 			}
+
+			if (scene == "Three" && audioSource.volume == 0) {
+				StartCoroutine(NextScene(MainController.State.SceneEnd));
+			}
 		}
 
 		// mute volume at scene 

@@ -9,7 +9,8 @@ public class MainController : MonoBehaviour
     {
         SceneOne,
         SceneTwo,
-        SceneThree
+        SceneThree,
+        SceneEnd
     }
     // Start is called before the first frame update
     void Start()
@@ -17,17 +18,6 @@ public class MainController : MonoBehaviour
         SceneController.Instance.OpenScene("Accueil");
         SceneController.Instance.OpenScene("Intro");
         SceneController.Instance.OpenScene("TV");
-        // SceneController.Instance.OpenScene("One");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space)){
-            SceneController.Instance.OpenScene("One");
-            SceneController.Instance.CloseScene("Intro");
-			SceneController.Instance.CloseScene("TV");
-        }
     }
 
     public void ChangeScene (State state) {
@@ -50,6 +40,11 @@ public class MainController : MonoBehaviour
             SceneController.Instance.OpenScene("Noise");
             SceneController.Instance.CloseScene("Two");
             SceneController.Instance.OpenScene("Three", true);
+            break;
+
+            case State.SceneEnd:
+            SceneController.Instance.CloseScene("Three");
+            SceneController.Instance.OpenScene("End");
             break;
         }
     }

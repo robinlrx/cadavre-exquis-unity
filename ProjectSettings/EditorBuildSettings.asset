@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 328525ebb4453274c870ca6308ebfe8b
   - enabled: 1
-    path: Assets/Scenes/TV.unity
+    path: Assets/Scenes/Tv.unity
     guid: 111bfef2f369a6449a6b9d574d92e0a2
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: f6c22537a9bf65c46941afe281b2a99c
   m_configObjects: {}
