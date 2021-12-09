@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 1d52fe8ba51d50241be43ce8f7719def
+guid: 0de99e17f94830e48bd4129685130de7
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black paint
+    second: {fileID: 2100000, guid: d4c9e6712ee54c341b3e5274d641d2e6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

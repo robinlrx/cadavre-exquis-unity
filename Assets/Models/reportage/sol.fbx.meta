@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 4a06df231c566ef4db2a92ffdbe8314f
+guid: a884a5328b50dda499ab7f27b7e57b0d
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: asphalt
+    second: {fileID: 2100000, guid: 26622087bb16d1943baeee3a9d7a73f3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
