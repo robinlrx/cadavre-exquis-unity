@@ -20,7 +20,7 @@ public class VolumeController : MonoBehaviour
 		mainController = GameObject.Find("MainController");
 		controller = mainController.GetComponent<MainController>();
 		audioSource = GetComponent<AudioSource>();
-		scale = 0.1f;
+		scale = 0.05f;
 		scene = SceneController.Instance.GetActualScene();
 	}
 
@@ -43,7 +43,9 @@ public class VolumeController : MonoBehaviour
 		// mute volume at scene 
 		if (scene == "One" || scene == "Two" || scene == "Three") {
 			if (Input.GetKeyDown(KeyCode.M)) {
+				if(scene != "Two") {
 				audioSource.mute = !audioSource.mute;
+				}
 
 				// change AudioClip;
 				if (scene == "Two") {
@@ -51,13 +53,10 @@ public class VolumeController : MonoBehaviour
 				audioSource.Play();
 
 				StartCoroutine(NextScene(MainController.State.SceneThree));
+					
+
 				}
 			}
-		}
-
-		// change volume at scene Three
-		if (scene == "Three") {
-			audioSource.volume += Input.mouseScrollDelta.y * scale;
 		}
 	}
 

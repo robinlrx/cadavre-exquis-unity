@@ -37,7 +37,10 @@ public class SceneController : Singleton<SceneController>
 
     public void CloseScene(string scene) {
         SceneManager.UnloadSceneAsync(scene);
-        OnCloseScene?.Invoke(scene);
+        // OnCloseScene?.Invoke(scene);
+        if(OnCloseScene!=null) {
+            OnCloseScene(scene);
+        }
     }
 
     public string GetActualScene() {
