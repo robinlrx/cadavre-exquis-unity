@@ -36,7 +36,7 @@ public class VolumeController : MonoBehaviour
 				audioSourceGlass.Play();
 				isNewAudioSourceAdded = true;
 
-				StartCoroutine(NextSceneTwo());
+				StartCoroutine(NextScene(MainController.State.SceneTwo));
 			}
 		}
 
@@ -50,7 +50,7 @@ public class VolumeController : MonoBehaviour
 				audioSource.clip = otherClip;
 				audioSource.Play();
 
-				StartCoroutine(NextSceneThree());
+				StartCoroutine(NextScene(MainController.State.SceneThree));
 				}
 			}
 		}
@@ -61,15 +61,9 @@ public class VolumeController : MonoBehaviour
 		}
 	}
 
-    private IEnumerator NextSceneTwo()
+	 private IEnumerator NextScene(MainController.State state)
     {
         yield return new WaitForSeconds(2f);
-        controller.ChangeScene(MainController.State.SceneTwo);
-    }
-
-	 private IEnumerator NextSceneThree()
-    {
-        yield return new WaitForSeconds(2f);
-        controller.ChangeScene(MainController.State.SceneThree);
+        controller.ChangeScene(state);
     }
 }

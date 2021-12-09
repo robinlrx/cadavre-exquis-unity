@@ -17,6 +17,8 @@ public class NoiseController : MonoBehaviour
     private IEnumerator CloseNoise()
     {
         yield return new WaitForSeconds(5f);
+        Debug.Log("Noise");
+        SceneController.Instance.OnOpenScene -= OnOpenScene;
         SceneController.Instance.CloseScene("Noise");
     }
     void OnDestroy()
