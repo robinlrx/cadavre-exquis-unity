@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: a67065fd227bf6d4f9874ccaab40e34c
+guid: b0ae618a4070d214fa24ea429856bd54
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "m\xE9tal_poubelle"
+    second: {fileID: 2100000, guid: 4b9adf8ec209c8840bfe874f883ebde1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
