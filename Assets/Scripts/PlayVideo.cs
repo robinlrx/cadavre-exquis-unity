@@ -15,12 +15,6 @@ public class PlayVideo : MonoBehaviour
         SceneController.Instance.OnCloseScene += PlayVideoController;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnDestroy(){
         SceneController.Instance.OnCloseScene -= PlayVideoController;
     }
