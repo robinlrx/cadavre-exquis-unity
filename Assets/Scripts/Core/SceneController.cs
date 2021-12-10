@@ -10,7 +10,7 @@ public class SceneController : Singleton<SceneController>
     public event SceneControllerEvent OnOpenScene;
     public event SceneControllerEvent OnCloseScene;
 
-    private string ActualScene;
+    public string ActualScene = "TV";
 
     public void OpenScene(string scene, bool preload = false, LoadSceneMode mode = LoadSceneMode.Additive){
         ActualScene = scene;

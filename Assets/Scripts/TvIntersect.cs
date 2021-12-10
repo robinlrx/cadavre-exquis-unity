@@ -8,7 +8,7 @@ public class TvIntersect : MonoBehaviour
     public float delay;
 
     void OnTriggerEnter (Collider other) {
-        if (other.name.CompareTo("Papillon") == 0 ) {
+        if (other.name.CompareTo("Papillon") == 0 && SceneController.Instance.ActualScene == "TV" ) {
             StartCoroutine(ChangeScene());
         }
     }

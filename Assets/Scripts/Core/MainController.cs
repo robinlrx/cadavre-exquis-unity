@@ -21,6 +21,7 @@ public class MainController : MonoBehaviour
     }
 
     public void ChangeScene (State state) {
+        Debug.Log(state);
         switch (state)
         {
             case State.SceneOne:
