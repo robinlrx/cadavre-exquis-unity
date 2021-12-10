@@ -261,7 +261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4204264757665510899, guid: 41e1782004c56b64085af88bdfe0a12b, type: 3}
       propertyPath: Duration
-      value: 2
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4204264757665510899, guid: 41e1782004c56b64085af88bdfe0a12b, type: 3}
       propertyPath: EndPoint
@@ -285,7 +285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5941360630602078454, guid: 41e1782004c56b64085af88bdfe0a12b, type: 3}
       propertyPath: Duration
-      value: 2
+      value: 29
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41e1782004c56b64085af88bdfe0a12b, type: 3}
